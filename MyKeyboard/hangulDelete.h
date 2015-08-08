@@ -10,4 +10,14 @@
 
 @interface hangulDelete : NSObject
 
+@property NSArray *chosungList;
+@property NSArray *jungsungList;
+@property NSArray *jongsungList;
+@property NSArray *doubleConsonantList;
+@property NSArray *doubelVowelList;
+
+@property NSMutableArray *splitedHangul;
+
+-(int)returnDeltedString:(NSString*)passedString;
+-(int)lengthOfString:(NSString*)lastString;
 @end
